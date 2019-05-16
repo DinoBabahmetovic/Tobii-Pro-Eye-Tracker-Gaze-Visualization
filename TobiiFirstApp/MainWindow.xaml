@@ -1,0 +1,21 @@
+﻿<Window x:Class="TobiiFirstApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TobiiFirstApp"
+        mc:Ignorable="d"
+        Title="EyeTracker" Width="Auto" Visibility="Visible" WindowState="Maximized">
+    <Grid x:Name="MainGrid" Width="{Binding ActualWidth, 
+              RelativeSource = {RelativeSource AncestorType = {x:Type Window}}}" 
+      Height="{Binding ActualHeight, 
+              RelativeSource ={RelativeSource AncestorType = {x:Type Window}}}">
+        <Canvas x:Name="MainCanvas" Width="{Binding ActualWidth, 
+              RelativeSource = {RelativeSource AncestorType = {x:Type Grid}}}" 
+      Height="{Binding ActualHeight, 
+              RelativeSource ={RelativeSource AncestorType = {x:Type Grid}}}">
+
+        </Canvas>
+
+    </Grid>
+</Window>
